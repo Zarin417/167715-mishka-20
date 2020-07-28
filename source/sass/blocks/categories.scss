@@ -1,0 +1,34 @@
+.categories__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories__item {
+  &--interior {
+    background-color: $mint;
+  }
+
+  &--toys {
+    background-color: $dark-mint;
+  }
+}
+
+.categories__item a {
+  display: block;
+
+  padding-top: 24px;
+  padding-right: 160px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  font-size: 19px;
+  font-weight: bold;
+
+  color: $white;
+  text-decoration: none;
+}
+
+.categories__name {
+  margin: 0;
+}

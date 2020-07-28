@@ -1,0 +1,76 @@
+.fieldset {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  border: none;
+}
+
+.fieldset__container {
+  width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.fieldset__legend {
+  position: relative;
+
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $mint;
+
+  &--type,
+  &--color,
+  &--name {
+    margin-bottom: 25px;
+  }
+
+  &--tel,
+  &--email {
+    margin-bottom: 5px;
+  }
+
+  &--extra {
+    margin-bottom: 22px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    content: "";
+
+    width: 198px;
+    height: 1px;
+
+    background-color: $mint;
+  }
+}
+
+.fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fieldset__textarea {
+  width: 100%;
+  min-height: 142px;
+  padding-top: 17px;
+  padding-right: 18px;
+  padding-left: 18px;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  resize: none;
+  border: 2px solid $graphite;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

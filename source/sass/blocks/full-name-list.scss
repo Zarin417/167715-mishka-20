@@ -1,0 +1,27 @@
+.full-name-list__item {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: inset 0 -2px 0 $black;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.full-name-list__label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.full-name-list__input {
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  opacity: 0.3;
+}

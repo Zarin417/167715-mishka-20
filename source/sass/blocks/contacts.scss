@@ -1,0 +1,48 @@
+.contacts {
+  margin-bottom: 32px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.contacts__list {
+  margin: 0;
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__term {
+  width: 76px;
+  margin-right: 1px;
+
+  line-height: 30px;
+  color: $graphite;
+}
+
+.contacts__description {
+  margin: 0;
+
+  line-height: 30px;
+  color: $graphite;
+
+  &--email a {
+    box-shadow: 0 1px 0 0 $mint;
+  }
+}
+
+.contacts__email {
+  color: $graphite;
+  text-decoration: none;
+}
+
+.contacts__address {
+  font-style: normal;
+}

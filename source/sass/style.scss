@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+//Blocks
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
+@import "blocks/hamburger-button.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/user-menu.scss";
+@import "blocks/additional-menu.scss";
+@import "blocks/page-main.scss";
+@import "blocks/intro.scss";
+@import "blocks/categories.scss";
+@import "blocks/product-hit.scss";
+@import "blocks/arguments.scss";
+@import "blocks/button.scss";
+@import "blocks/about-us";
+@import "blocks/reviews.scss";
+@import "blocks/contacts-section.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";
+@import "blocks/products.scss";
+@import "blocks/product-card.scss";
+@import "blocks/production.scss";
+@import "blocks/order.scss";
+@import "blocks/fieldset.scss";
+@import "blocks/type-list.scss";
+@import "blocks/color-list.scss";
+@import "blocks/full-name-list.scss";
+@import "blocks/phone-list.scss";
+@import "blocks/email-list.scss";

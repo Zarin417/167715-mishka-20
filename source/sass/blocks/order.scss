@@ -1,0 +1,28 @@
+.order__fieldset {
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.order__container {
+  width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.order__note {
+  display: block;
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $graphite;
+}
+
+.order__button {
+  margin-bottom: 16px;
+
+  background-color: transparent;
+  cursor: pointer;
+}

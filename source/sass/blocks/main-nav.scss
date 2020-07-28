@@ -1,0 +1,22 @@
+.main-nav {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__logo {
+  align-self: center;
+}
+
+.main-nav__menu-button {
+  position: absolute;
+}
+
+.main-nav__additional-menu {
+  display: none;
+}
+
+.main-nav__delivery {
+  display: none;
+}

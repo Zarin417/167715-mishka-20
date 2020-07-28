@@ -1,0 +1,41 @@
+.production {
+  margin-bottom: 19px;
+}
+
+.production__container {
+  width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.production__title {
+  margin: 0;
+  padding-top: 21px;
+  padding-bottom: 26px;
+  padding-left: 91px;
+
+  font-size: 17px;
+
+  border: 1px solid $shadow;
+}
+
+.production__footer {
+  margin-top: -7px;
+  padding-top: 35px;
+  padding-right: 31px;
+  padding-bottom: 33px;
+  padding-left: 34px;
+
+  border: 1px solid $shadow;
+}
+
+.production__description {
+  margin: 0;
+  margin-bottom: 41px;
+
+  font-size: 13px;
+}
+
+.production__to-order-button {
+  width: 192px;
+}

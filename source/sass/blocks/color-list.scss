@@ -1,0 +1,52 @@
+.color-list__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 39px;
+  padding-left: 63px;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.color-list__label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+
+    width: 40px;
+    height: 39px;
+
+    border: 2px solid $graphite;
+  }
+}
+
+.color-list__input:checked + .color-list__label {
+  &::after {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+
+    content: "";
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../../img/icon-tick.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
