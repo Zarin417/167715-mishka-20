@@ -1,0 +1,44 @@
+.sizes__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  list-style: none;
+}
+
+.sizes__item:not(:last-child) {
+  margin-right: 7px;
+}
+
+.sizes__label {
+  display: block;
+
+  width: 82px;
+  height: 52px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+
+  border: 2px solid rgba($graphite, 0.1);
+}
+
+.sizes__item input:checked + .sizes__label {
+  border: 2px solid $mint;
+}
+
+.sizes__button {
+  margin-bottom: 41px;
+
+  line-height: 16px;
+  color: $white;
+
+  background-color: $mint;
+  border: none;
+  cursor: pointer;
+}

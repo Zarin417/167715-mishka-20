@@ -1,8 +1,9 @@
-@import "global/variables.scss";
-@import "global/fonts.scss";
 @import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
 
 //Blocks
+@import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -16,7 +17,6 @@
 @import "blocks/categories.scss";
 @import "blocks/product-hit.scss";
 @import "blocks/arguments.scss";
-@import "blocks/button.scss";
 @import "blocks/about-us";
 @import "blocks/reviews.scss";
 @import "blocks/contacts-section.scss";
@@ -35,3 +35,4 @@
 @import "blocks/full-name-list.scss";
 @import "blocks/phone-list.scss";
 @import "blocks/email-list.scss";
+@import "blocks/sizes.scss";

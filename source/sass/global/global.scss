@@ -1,10 +1,10 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;   // border-box как модель расчетов для всего сайта
+  box-sizing: border-box;   //  border-box как модель расчетов для всего проекта
 }
 
-.visually-hidden {
+.visually-hidden {      //  прячем доступно
   position: absolute;
   width: 1px;
   height: 1px;
