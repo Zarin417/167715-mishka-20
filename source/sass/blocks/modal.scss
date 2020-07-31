@@ -1,4 +1,33 @@
 .modal {
-  display: none;
   width: 320px;
+
+  border: 1px solid $modal-grey;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 21px;
+
+  line-height: 30px;
 }
