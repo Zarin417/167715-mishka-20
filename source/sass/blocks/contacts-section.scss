@@ -1,15 +1,20 @@
-.contacts-section__container {
-  width: 320px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
 .contacts-section__map {
+  position: relative;
   width: 320px;
   height: 457px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 39px;
 }
 
+.contacts-section__map iframe {
+  position: absolute;
+  z-index: 2;
+  border: none;
+}
+
 .contacts-section__map img {
+  position: absolute;
+  z-index: 1;
   object-fit: cover;
 }

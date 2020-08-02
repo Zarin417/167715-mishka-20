@@ -2,21 +2,23 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>«Мишка»: Каталог товаров</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page">
-<!--  Хедер страницы  -->
+<!--  Page header  -->
 <header class="page-header">
   <nav class="main-nav">
     <a class="main-nav__logo logo" href="index.html">
       <picture class="logo__img">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Мишка»">
       </picture>
     </a>
 
-    <button class="main-nav__menu-button hamburger-button hamburger-button--close" type="button"
-      name="menu">
+    <button class="main-nav__menu-button main-nav__menu-button--close" type="button" name="menu">
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
@@ -32,7 +34,7 @@
 
     <ul class="main-nav__user-menu user-menu">
       <li class="user-menu__item user-menu__item--search">
-        <a href="#"><span class="user-menu__hidden-label">Поиск по сайту</span></a>
+        <a href="#"><span>Поиск по сайту</span></a>
       </li>
 
       <li class="user-menu__item user-menu__item--basket">
@@ -54,19 +56,19 @@
   </nav>
 </header>
 
-<!--  Основной контент  -->
+<!--  Main content  -->
 <main class="page-main">
-  <section class="page-main__intro intro">
+  <section class="page-main__intro page-main__intro--catalog intro">
     <div class="intro__container intro__container--inner">
       <h1 class="intro__title">Каталог товаров</h1>
     </div>
   </section>
 
-  <!--  Каталог продукции  -->
+  <!--  Product catalog  -->
   <section class="products">
     <h2 class="visually-hidden">Наша продукция</h2>
 
-    <div class="products__container">
+    <div class="products__container container">
       <ul class="products__list">
         <li class="products__item product-card">
           <picture class="product-card__img">
@@ -128,9 +130,9 @@
     </div>
   </section>
 
-  <!--  Секция о производстве  -->
+  <!--  About production section  -->
   <section class="production">
-    <div class="production__container">
+    <div class="production__container container">
       <h2 class="production__title">Процесс производства</h2>
       <video class="production__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
         <source src="#" type="video/mp4">
@@ -147,12 +149,12 @@
   </section>
 </main>
 
-<!--  Футер страницы-->
+<!--  Page footer  -->
 <footer class="page-footer">
-  <div class="page-footer__container">
+  <div class="page-footer__container container">
     <a class="page-footer__logo logo" href="index.html">
       <picture class="logo__img">
-        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        <img src="img/logo-footer.svg" alt="Логотип интернет-магазина «Мишка»">
       </picture>
     </a>
 
@@ -183,9 +185,9 @@
   </div>
 </footer>
 
-<!--  Модальное окно  -->
+<!--  Modal window  -->
 <section class="page__modal modal">
-  <div class="modal__container">
+  <div class="modal__container container">
     <h2 class="modal__title">
       Добавить<br>
       в корзину

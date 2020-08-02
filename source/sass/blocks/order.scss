@@ -4,12 +4,6 @@
   }
 }
 
-.order__container {
-  width: 320px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
 .order__note {
   display: block;
 
@@ -21,6 +15,7 @@
 }
 
 .order__button {
+  width: 100%;
   margin-bottom: 16px;
 
   background-color: transparent;
