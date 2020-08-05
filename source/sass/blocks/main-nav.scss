@@ -11,9 +11,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
 
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 
@@ -101,8 +103,6 @@
   display: none;
 
   margin: 0;
-  padding-top: 20px;
-  padding-right: 50px;
   color: $graphite;
 
   @media (min-width: $tablet-width) {

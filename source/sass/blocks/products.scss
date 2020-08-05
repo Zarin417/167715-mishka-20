@@ -1,3 +1,15 @@
+.products {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
 .products__list {
   margin: 0;
   padding: 0;
@@ -5,5 +17,19 @@
 }
 
 .products__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

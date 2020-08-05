@@ -1,16 +1,19 @@
-.modal {
-  width: 320px;
-
-  border: 1px solid $modal-grey;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-}
-
 .modal__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  width: 320px;
+  height: 336px;
   padding-top: 28px;
+
+  border: 1px solid $modal-grey;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-top: 38px;
+  }
 }
 
 .modal__title {
@@ -20,6 +23,17 @@
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 57px;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .modal__description {
@@ -27,4 +41,8 @@
   margin-bottom: 21px;
 
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }

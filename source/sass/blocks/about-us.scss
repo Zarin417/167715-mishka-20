@@ -1,5 +1,15 @@
 .about-us {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.about-us__container {
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .about-us__title {
@@ -9,18 +19,127 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    max-height: 471px;
+  }
 }
 
 .about-us__item {
+  position: relative;
+
   padding-top: 50px;
 
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+
+    background-repeat: no-repeat;
+  }
+
+  &--materials {
+    margin-bottom: 30px;
+
+    &::before {
+      width: 32px;
+      height: 37px;
+
+      background-image: url("../img/icon-feature-flower.svg");
+    }
+  }
+
+  &--price {
+    margin-bottom: 35px;
+
+    &::before {
+      width: 47px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-money.svg");
+    }
+  }
+
+  &--likes {
+    margin-bottom: 32px;
+
+    &::before {
+      width: 34px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-heart.svg");
+    }
+  }
+
+  &--with-love {
+    margin-bottom: 33px;
+
+    &::before {
+      width: 35px;
+      height: 34px;
+
+      background-image: url("../img/icon-feature-ball.svg");
+    }
+  }
+
+  &--support {
+    margin-bottom: 32px;
+
+    &::before {
+      width: 55px;
+      height: 23px;
+
+      background-image: url("../img/icon-feature-rocket.svg");
+    }
+  }
+
+  &--delivery {
+    &::before {
+      width: 33px;
+      height: 32px;
+
+      background-image: url("../../img/icon-feature-gift.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    min-height: 157px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
 }

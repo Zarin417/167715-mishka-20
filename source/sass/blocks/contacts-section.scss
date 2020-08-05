@@ -1,3 +1,58 @@
+.contacts-section {
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    display: flex;
+
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+  }
+}
+
+.contacts-section__container {
+  @media (min-width: $desktop-width) {
+    width: 485px;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+}
+
+.contacts-section__contacts {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -22px;
+      right: 2px;
+
+      content: "";
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 79px;
+    padding-left: 175px;
+
+    &::before {
+      top: 62px;
+      left: 64px;
+    }
+  }
+}
+
 .contacts-section__map {
   position: relative;
   width: 320px;
@@ -5,16 +60,69 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 39px;
+
+  &::before {
+    position: absolute;
+    bottom: 215px;
+    left: 138px;
+    z-index: 2;
+
+    content: "";
+
+    width: 67px;
+    height: 100px;
+
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-bottom: 55px;
+
+    &::before {
+      left: 363px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    margin: 0;
+
+    &::before {
+      left: 239px;
+    }
+  }
 }
 
 .contacts-section__map iframe {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
+
+  width: 100%;
+  height: 457px;
+
   border: none;
 }
 
 .contacts-section__map img {
   position: absolute;
   z-index: 1;
+
+  width: 100%;
+  height: 457px;
   object-fit: cover;
+}
+
+.contacts-section__write-us-btn {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 176px;
+
+    margin: 0;
+  }
 }

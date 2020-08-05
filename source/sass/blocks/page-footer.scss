@@ -5,15 +5,20 @@
 }
 
 .page-footer__container {
+  margin: 0 auto;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 668px;
     min-height: 143px;
-    padding-right: 50px;
-    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 
