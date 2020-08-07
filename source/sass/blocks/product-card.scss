@@ -17,6 +17,12 @@
     padding-right: 33px;
     padding-left: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    min-height: 197px;
+    padding-left: 28px;
+  }
 }
 
 .product-card__img {
@@ -42,12 +48,21 @@
     margin-bottom: 10px;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 240px;
+    margin-bottom: 7px;
+  }
 }
 
 .product-card__link {
   font-size: 17px;
   color: $black;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .product-card__description {
@@ -89,6 +104,7 @@
 .product-card__to-basket-btn {
   width: 20px;
   height: 19px;
+  padding: 0;
 
   border: none;
 

@@ -136,12 +136,15 @@
   <!--  About production section  -->
   <section class="production">
     <div class="production__container container">
-      <h2 class="production__title">Процесс производства</h2>
-      <video class="production__video" poster="img/video-mobile@1x.jpg">
-        <source src="#" type="video/mp4">
-        <source src="#" type="video/ogg">
-        <source src="#" type="video/webm">
-      </video>
+      <h2 class="production__title">
+        Процесс<br>
+        производства
+      </h2>
+      <picture class="production__video">
+        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+        <img src="img/video-mobile@1x.jpg" alt="Видео о процессе производства">
+      </picture>
       <div class="production__footer">
         <p class="production__description">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
