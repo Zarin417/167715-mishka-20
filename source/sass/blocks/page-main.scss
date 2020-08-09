@@ -5,10 +5,24 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+
+    &--form {
+      margin-bottom: 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 105px;
+
+    &--form {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.page-main__container {
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }
 
@@ -50,6 +64,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--form {
+      margin-bottom: 99px;
+    }
+
     &::after {
       height: 34px;
     }
@@ -61,4 +79,11 @@
   margin-bottom: 30px;
 
   font-size: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

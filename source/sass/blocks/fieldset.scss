@@ -4,6 +4,26 @@
   padding: 0;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+
+    &--phone {
+      margin-bottom: 0;
+      padding-top: 50px;
+      padding-bottom: 24px;
+    }
+
+    &--email {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.fieldset__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .fieldset__legend {
@@ -43,6 +63,48 @@
 
     background-color: $mint;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    margin-right: 15px;
+    margin-bottom: 0;
+
+    &--type {
+      padding-top: 20px;
+    }
+
+    &--color {
+      padding-top: 66px;
+    }
+
+    &--name {
+      padding-top: 17px;
+    }
+
+    &--tel {
+      padding-top: 15px;
+    }
+
+    &--email {
+      padding-top: 17px;
+    }
+
+    &--extra {
+      padding-top: 19px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+
+    &--type {
+      padding-top: 21px;
+    }
+  }
 }
 
 .fieldset__list {
@@ -66,5 +128,13 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 503px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }

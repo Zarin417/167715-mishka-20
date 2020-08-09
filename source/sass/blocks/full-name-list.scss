@@ -1,11 +1,35 @@
+.full-name-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 503px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
 .full-name-list__item {
   display: flex;
   flex-direction: column;
 
-  box-shadow: inset 0 -2px 0 $black;
-
   &:not(:last-child) {
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: baseline;
+
+    width: 100%;
+
+    box-shadow: none;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -13,6 +37,12 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+
+    font-size: 19px;
+  }
 }
 
 .full-name-list__input {
@@ -22,6 +52,19 @@
   font-size: 17px;
   line-height: 18px;
 
+  box-shadow: inset 0 -2px 0 $black;
   border: none;
-  opacity: 0.3;
+
+  @include placeholder {
+    color: rgba($black, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+
+    font-size: 19px;
+  }
 }

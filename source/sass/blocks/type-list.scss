@@ -11,6 +11,15 @@
   &:not(:last-child) {
     margin-bottom: 13px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 55px;
+    padding-left: 81px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .type-list__label {
@@ -33,6 +42,15 @@
     border: 2px solid $graphite;
     border-radius: 50%;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+
+    &::before {
+      width: 54px;
+      height: 54px;
+    }
+  }
 }
 
 .type-list__input:checked + .type-list__label {
@@ -48,5 +66,15 @@
 
     background-color: $mint;
     border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 15px;
+      left: 15px;
+
+      width: 24px;
+      height: 24px;
+    }
   }
 }
