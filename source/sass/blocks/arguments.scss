@@ -1,11 +1,17 @@
 .arguments {
-  margin: 0;
-  margin-bottom: 28px;
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 58px;
+  }
 }
 
 .arguments__item {
   display: flex;
 
+  color: $graphite;
   border-bottom: 1px solid $shadow;
 }
 

@@ -1,12 +1,77 @@
 .page-main {
-  width: 320px;
+  width: 100%;
+
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+
+    &--form {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+
+    &--form {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .page-main__container {
-  width: 320px;
-  padding-right: 30px;
-  padding-left: 30px;
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.page-main__intro {
+  position: relative;
+
+  margin-bottom: 30px;
+  background-color: $light-grey-index;
+
+  &--form {
+    background-color: $light-grey;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
+    &--catalog {
+      margin-bottom: 67px;
+    }
+
+    &--form {
+      margin-bottom: 54px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+
+      content: "";
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      margin-bottom: 99px;
+    }
+
+    &::after {
+      height: 34px;
+    }
+  }
 }
 
 .page-main__description {
@@ -14,4 +79,11 @@
   margin-bottom: 30px;
 
   font-size: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

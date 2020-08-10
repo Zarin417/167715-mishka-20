@@ -26,6 +26,10 @@
   text-align: center;
 
   border: 2px solid rgba($graphite, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
 }
 
 .sizes__item input:checked + .sizes__label {
@@ -41,4 +45,8 @@
   background-color: $mint;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }

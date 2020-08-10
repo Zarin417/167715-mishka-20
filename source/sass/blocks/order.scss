@@ -1,13 +1,31 @@
+.order__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
 .order__fieldset {
   &:last-of-type {
     margin-bottom: 10px;
   }
-}
 
-.order__container {
-  width: 320px;
-  padding-right: 30px;
-  padding-left: 30px;
+  @media (min-width: $tablet-width) {
+    &:last-of-type {
+      margin-bottom: 53px;
+    }
+
+    &--background {
+      background-color: $light-grey;
+    }
+
+    &--phone {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .order__note {
@@ -18,11 +36,28 @@
   font-size: 14px;
   line-height: 16px;
   color: $graphite;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+
+    margin-bottom: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .order__button {
+  width: 100%;
   margin-bottom: 16px;
 
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-bottom: 0;
+  }
 }
