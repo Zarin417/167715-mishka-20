@@ -10,7 +10,7 @@
 <!--  Page header  -->
 <header class="page-header">
   <nav class="main-nav">
-    <a class="main-nav__logo logo">
+    <a class="main-nav__logo main-nav__logo--index logo">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -22,7 +22,7 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
-    <ul class="main-nav__main-menu main-menu">
+    <ul class="main-nav__main-menu main-nav__main-menu--no-js main-menu">
       <li class="main-menu__item">
         <a href="catalog.html">Каталог товаров</a>
       </li>
@@ -32,7 +32,7 @@
       </li>
     </ul>
 
-    <ul class="main-nav__user-menu user-menu">
+    <ul class="main-nav__user-menu main-nav__user-menu--no-js user-menu">
       <li class="user-menu__item user-menu__item--search">
         <a href="#"><span>Поиск по сайту</span></a>
       </li>
@@ -73,13 +73,13 @@
 
       <ul class="categories__list">
         <li class="categories__item categories__item--interior">
-          <a href="#">
+          <a class="categories__link categories__link--interior" href="#">
             <p class="categories__name">Предметы интерьера</p>
           </a>
         </li>
 
         <li class="categories__item categories__item--toys">
-          <a href="#">
+          <a class="categories__link categories__link--toys" href="#">
             <p class="categories__name">Детские игрушки</p>
           </a>
         </li>
@@ -119,7 +119,7 @@
         <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
       </picture>
       <p class="product-hit__price">Цена: 990 руб.</p>
-      <a class="product-hit__to-order-button button" href="product-hit-to-order.html">Заказать</a>
+      <a class="product-hit__to-order-button button" href="product-hit-to-order.html" data-to-basket>Заказать</a>
     </div>
   </article>
 
@@ -266,7 +266,7 @@
 </footer>
 
 <!--  Modal window  -->
-<section class="page__modal modal">
+<section class="page__modal page__modal--hide modal">
   <div class="modal__container container">
     <h2 class="modal__title">
       Добавить<br>
@@ -277,17 +277,17 @@
     <form class="modal_form sizes" action="https://echo.htmlacademy.ru" method="post">
       <ul class="sizes__list">
         <li class="sizes__item">
-          <input class="visually-hidden" type="radio" id="small" name="size" value="small" checked>
+          <input class="sizes__input visually-hidden" type="radio" id="small" name="size" value="small" checked>
           <label class="sizes__label" for="small">S</label>
         </li>
 
         <li class="sizes__item">
-          <input class="visually-hidden" type="radio" id="medium" name="size" value="medium">
+          <input class="sizes__input visually-hidden" type="radio" id="medium" name="size" value="medium">
           <label class="sizes__label" for="medium">M</label>
         </li>
 
         <li class="sizes__item">
-          <input class="visually-hidden" type="radio" id="large" name="size" value="large">
+          <input class="sizes__input visually-hidden" type="radio" id="large" name="size" value="large">
           <label class="sizes__label" for="large">L</label>
         </li>
       </ul>
@@ -296,5 +296,8 @@
     </form>
   </div>
 </section>
+
+<script src="js/nav-main.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

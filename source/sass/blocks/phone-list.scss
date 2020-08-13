@@ -47,6 +47,7 @@
 
   font-size: 17px;
   line-height: 18px;
+  color: $graphite;
 
   background-color: transparent;
   box-shadow: inset 0 -2px 0 $black;
@@ -62,5 +63,11 @@
     padding-left: 17px;
 
     font-size: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 $mint;
+    outline: none;
   }
 }

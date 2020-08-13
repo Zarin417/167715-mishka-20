@@ -159,11 +159,22 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/3;
 
+    z-index: 1;
+
+    padding-top: 172px;
     padding-right: 36px;
     padding-bottom: 0;
     padding-left: 79px;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 

@@ -56,6 +56,11 @@
   background-color: transparent;
   cursor: pointer;
 
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #63d1bb;
+  }
+
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-bottom: 0;
