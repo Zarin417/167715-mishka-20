@@ -30,9 +30,15 @@
   @media (min-width: $tablet-width) {
     width: 112px;
   }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      border: 2px solid rgba($graphite, 0.3);
+    }
+  }
 }
 
-.sizes__item input:checked + .sizes__label {
+.sizes__input:checked + .sizes__label {
   border: 2px solid $mint;
 }
 

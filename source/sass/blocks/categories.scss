@@ -10,14 +10,6 @@
 }
 
 .categories__item {
-  &--interior {
-    background-color: $mint;
-  }
-
-  &--toys {
-    background-color: $dark-mint;
-  }
-
   @media (min-width: $tablet-width) {
     max-width: 334px;
   }
@@ -27,7 +19,7 @@
   }
 }
 
-.categories__item a {
+.categories__link {
   display: block;
   position: relative;
 
@@ -47,9 +39,77 @@
 
     content: "";
 
-    background-fill: #149080;
     background-repeat: no-repeat;
     opacity: 0.5;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &--interior {
+    background-color: $mint;
+
+    &:hover,
+    &:focus {
+      background-color: $mint-special;
+    }
+
+    &::after {
+      top: 23px;
+      right: 36px;
+
+      width: 40px;
+      height: 62px;
+
+      background-image: url("../img/icon-interior.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 30px;
+
+        width: 41px;
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $dark-mint;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-mint-special;
+    }
+
+    &::after {
+      top: 21px;
+      right: 27px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-toy.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 31px;
+        right: 33px;
+
+        width: 61px;
+        height: 61px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -64,47 +124,11 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 350px;
-  }
-}
 
-.categories__item--interior a {
-  &::after {
-    top: 23px;
-    right: 36px;
-
-    width: 40px;
-    height: 62px;
-
-    background-image: url("../img/icon-interior.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      top: 30px;
-
-      width: 41px;
-    }
-  }
-}
-
-.categories__item--toys a {
-  &::after {
-    top: 21px;
-    right: 27px;
-
-    width: 60px;
-    height: 60px;
-
-    background-image: url("../img/icon-toy.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      top: 31px;
-      right: 33px;
-
-      width: 61px;
-      height: 61px;
+    &:hover,
+    &:focus {
+      height: 124px;
+      margin-top: -5px;
     }
   }
 }

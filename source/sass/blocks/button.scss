@@ -15,4 +15,14 @@
   text-transform: uppercase;
 
   border: 2px solid $graphite;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background: linear-gradient(0deg, $graphite, $graphite);
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }

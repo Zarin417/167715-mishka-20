@@ -82,6 +82,16 @@
       height: 52px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:hover::before {
+      border: 2px solid $mint;
+    }
+
+    &:active::before {
+      border: 2px solid rgba($graphite, 0.3);
+    }
+  }
 }
 
 .color-list__input:checked + .color-list__label {
@@ -108,5 +118,11 @@
       width: 33px;
       height: 22px;
     }
+  }
+}
+
+.color-list__input:focus + label::before {
+  @media (min-width: $desktop-width) {
+    border: 2px solid $mint;
   }
 }

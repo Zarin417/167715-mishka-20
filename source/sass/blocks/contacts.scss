@@ -81,6 +81,15 @@
 .contacts__email {
   color: $graphite;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $dark-mint-special;
+  }
+
+  &:active {
+    color: $dark-mint-special;
+  }
 }
 
 .contacts__address {

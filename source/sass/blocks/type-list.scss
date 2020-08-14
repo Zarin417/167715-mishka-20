@@ -51,6 +51,16 @@
       height: 54px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:hover::before {
+      border: 2px solid $mint;
+    }
+
+    &:active::before {
+      border: 2px solid rgba($graphite, 0.3);
+    }
+  }
 }
 
 .type-list__input:checked + .type-list__label {
@@ -76,5 +86,11 @@
       width: 24px;
       height: 24px;
     }
+  }
+}
+
+.type-list__input:focus + label::before {
+  @media (min-width: $desktop-width) {
+    border: 2px solid $mint;
   }
 }

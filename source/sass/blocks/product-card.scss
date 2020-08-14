@@ -22,6 +22,14 @@
     width: 316px;
     min-height: 197px;
     padding-left: 28px;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
@@ -59,6 +67,17 @@
   font-size: 17px;
   color: $black;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+    box-shadow: none;
+    outline: $mint solid 2px;
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

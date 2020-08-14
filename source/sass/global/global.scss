@@ -1,10 +1,15 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;   //  border-box как модель расчетов для всего проекта
+  box-sizing: border-box;   //  border-box model for all project
 }
 
-.visually-hidden {      //  прячем доступно
+a:focus {                   // change outlines on box-shadow for all pages
+  outline: none;
+  box-shadow: 0 0 0 2px #63d1bb;
+}
+
+.visually-hidden {      //  hide available
   position: absolute;
   width: 1px;
   height: 1px;
