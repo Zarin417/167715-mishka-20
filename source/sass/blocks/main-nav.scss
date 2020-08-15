@@ -6,6 +6,7 @@
   flex-wrap: wrap;
 
   width: 320px;
+  min-height: 79px;
   margin: 0 auto;
 
   & a[href]:hover,
@@ -32,6 +33,10 @@
   padding: 22px 0;
   align-self: center;
 
+  & picture {
+    display: inline-flex;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -51,7 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin-left: 75px;
   }
 }
 

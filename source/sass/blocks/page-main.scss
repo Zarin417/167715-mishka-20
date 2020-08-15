@@ -29,7 +29,7 @@
 .page-main__intro {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   background-color: $light-grey-index;
 
   &--form {
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 52px;
 
     &--catalog {
       margin-bottom: 67px;
@@ -50,7 +50,7 @@
 
     &::after {
       position: absolute;
-      bottom: -15px;
+      bottom: -12px;
       left: 0;
 
       content: "";
@@ -64,11 +64,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+
     &--form {
       margin-bottom: 99px;
     }
 
     &::after {
+      bottom: -17px;
       height: 34px;
     }
   }
