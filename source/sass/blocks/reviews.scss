@@ -26,6 +26,10 @@
     background-repeat: no-repeat;
     background-position: top left;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+
     &::after {
       position: absolute;
       bottom: -86px;
