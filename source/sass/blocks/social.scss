@@ -1,6 +1,7 @@
 .social__list {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -13,6 +14,10 @@
     padding: 0;
     padding-left: 75px;
     box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
   }
 }
 

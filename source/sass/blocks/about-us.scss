@@ -2,7 +2,11 @@
   margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -28,6 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -50,8 +56,6 @@
 .about-us__item {
   position: relative;
 
-  padding-top: 50px;
-
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -59,7 +63,6 @@
   &::before {
     position: absolute;
     top: 0;
-    left: 0;
 
     content: "";
 
@@ -68,9 +71,12 @@
   }
 
   &--materials {
-    margin-bottom: 30px;
+    padding-top: 55px;
+    margin-bottom: 29px;
 
     &::before {
+      left: 8px;
+
       width: 32px;
       height: 37px;
 
@@ -79,9 +85,11 @@
   }
 
   &--price {
+    padding-top: 54px;
     margin-bottom: 35px;
 
     &::before {
+      left: 0;
       width: 47px;
       height: 27px;
 
@@ -90,9 +98,12 @@
   }
 
   &--likes {
+    padding-top: 48px;
     margin-bottom: 32px;
 
     &::before {
+      left: 7px;
+
       width: 34px;
       height: 27px;
 
@@ -101,9 +112,12 @@
   }
 
   &--with-love {
+    padding-top: 51px;
     margin-bottom: 33px;
 
     &::before {
+      left: 3px;
+
       width: 35px;
       height: 34px;
 
@@ -112,9 +126,12 @@
   }
 
   &--support {
+    padding-top: 49px;
     margin-bottom: 32px;
 
     &::before {
+      left: -6px;
+
       width: 55px;
       height: 23px;
 
@@ -123,11 +140,15 @@
   }
 
   &--delivery {
+    padding-top: 52px;
+
     &::before {
+      left: 3px;
+
       width: 33px;
       height: 32px;
 
-      background-image: url("../../img/icon-feature-gift.svg");
+      background-image: url("../img/icon-feature-gift.svg");
     }
   }
 
@@ -138,6 +159,35 @@
 
     font-size: 20px;
     line-height: 22px;
+
+    &--materials {
+      padding-top: 57px;
+    }
+
+    &--likes {
+      padding-top: 52px;
+
+      &::before {
+        top: 3px;
+        left: 8px;
+      }
+    }
+
+    &--with-love {
+      padding-top: 57px;
+
+      &::before {
+        top: 4px;
+      }
+    }
+
+    &--support {
+      padding-top: 55px;
+
+      &::before {
+        top: 3px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {

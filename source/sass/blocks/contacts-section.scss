@@ -1,6 +1,6 @@
 .contacts-section {
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,8 +29,8 @@
 
     &::before {
       position: absolute;
-      top: -22px;
-      right: 2px;
+      top: -23px;
+      right: 3px;
 
       content: "";
 
@@ -47,8 +47,8 @@
     padding-left: 175px;
 
     &::before {
-      top: 62px;
-      left: 64px;
+      top: 64px;
+      left: 63px;
     }
   }
 }
@@ -59,7 +59,7 @@
   height: 457px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 
   &::before {
     position: absolute;
@@ -118,10 +118,14 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
-    left: 176px;
+    bottom: -2px;
+    left: 175px;
 
     margin: 0;
   }

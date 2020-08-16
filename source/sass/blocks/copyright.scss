@@ -3,12 +3,16 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 22px;
+  padding-top: 17px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 }
 
