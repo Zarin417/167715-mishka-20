@@ -1,23 +1,5 @@
 .fieldset {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-
   border: none;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
-
-    &--phone {
-      margin-bottom: 0;
-      padding-top: 50px;
-      padding-bottom: 24px;
-    }
-
-    &--email {
-      padding-bottom: 50px;
-    }
-  }
 }
 
 .fieldset__container {
@@ -37,14 +19,17 @@
   color: $mint;
 
   &--type,
-  &--color,
+  &--color {
+    margin-bottom: 23px;
+  }
+
   &--name {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   &--tel,
   &--email {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   &--extra {
@@ -100,6 +85,7 @@
 
   @media (min-width: $desktop-width) {
     width: 160px;
+    padding-left: 60px;
 
     &--type {
       padding-top: 21px;
@@ -128,6 +114,7 @@
   border: 2px solid $graphite;
 
   &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
     color: rgba(0, 0, 0, 0.3);
   }
 

@@ -9,7 +9,7 @@
   padding-left: 63px;
 
   &:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -36,8 +36,8 @@
 
     content: "";
 
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
 
     border: 2px solid $graphite;
     border-radius: 50%;
@@ -71,8 +71,8 @@
 
     content: "";
 
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 
     background-color: $mint;
     border-radius: 50%;

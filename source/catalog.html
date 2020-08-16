@@ -140,11 +140,16 @@
         Процесс<br>
         производства
       </h2>
-      <picture class="production__video">
-        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-        <img src="img/video-mobile@1x.jpg" alt="Видео о процессе производства">
-      </picture>
+      <div class="production__video">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+          <img src="img/video-mobile@1x.jpg" alt="Видео о процессе производства">
+        </picture>
+        <button class="production__video-btn" type="button" name="start video">
+          <span class="visually-hidden">Воспроизвести видео</span>
+        </button>
+      </div>
       <div class="production__footer">
         <p class="production__description">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.

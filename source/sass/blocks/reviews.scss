@@ -21,7 +21,7 @@
 
     margin-bottom: 130px;
 
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position: top left;
@@ -213,9 +213,12 @@
 
   &:hover,
   &:focus {
+    opacity: 0.6;
+  }
+
+  &:focus {
     outline: none;
     box-shadow: 0 0 0 2px $mint;
-    opacity: 0.6;
   }
 
   &:active {

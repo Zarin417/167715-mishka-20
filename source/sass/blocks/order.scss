@@ -9,8 +9,28 @@
 }
 
 .order__fieldset {
+  margin: 0;
+  padding: 0;
+
   &:last-of-type {
     margin-bottom: 10px;
+  }
+
+  &--type {
+    margin-bottom: 30px;
+  }
+
+  &--color {
+    margin-bottom: 34px;
+  }
+
+  &--name {
+    margin-bottom: 34px;
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 35px;
   }
 
   @media (min-width: $tablet-width) {
@@ -18,12 +38,33 @@
       margin-bottom: 53px;
     }
 
-    &--background {
-      background-color: $light-grey;
+    &--type,
+    &--color,
+    &--name,
+    &--email {
+      margin-bottom: 50px;
     }
 
     &--phone {
       margin-bottom: 0;
+      padding-top: 50px;
+    }
+
+    &--email {
+      padding-top: 25px;
+      padding-bottom: 48px;
+    }
+
+    &--color,
+    &--phone,
+    &--email {
+      background-color: $light-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--type {
+      margin-bottom: 46px;
     }
   }
 }
@@ -52,6 +93,8 @@
 .order__button {
   width: 100%;
   margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 12px;
 
   background-color: transparent;
   cursor: pointer;
