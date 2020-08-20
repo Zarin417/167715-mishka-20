@@ -24,10 +24,18 @@
 }
 
 .copyright__link {
-  display: block;
+  display: inline-flex;
 
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: $dark-mint-special;
+  }
+
+  &:active .copyright__icon {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  fill: $mint;
 }

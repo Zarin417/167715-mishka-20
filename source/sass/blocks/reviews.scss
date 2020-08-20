@@ -166,6 +166,10 @@
   color: $graphite;
   text-decoration: none;
 
+  &:focus {
+    box-shadow: 0 0 0 2px $mint;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 400px;
     margin-bottom: 47px;
@@ -188,8 +192,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
-
-    padding-top: 16px;
   }
 }
 
@@ -202,19 +204,6 @@
   background-color: transparent;
   cursor: pointer;
 
-  &--backward {
-    background-image: url("../img/icon-left-arrow.svg");
-    background-position: 47% 47%;
-    background-repeat: no-repeat;
-    border-right: none;
-  }
-
-  &--forward {
-    background-image: url("../img/icon-right-arrow.svg");
-    background-position: 48% 47%;
-    background-repeat: no-repeat;
-  }
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -222,7 +211,6 @@
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px $mint;
   }
 
   &:active {
@@ -252,5 +240,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
+
+    margin-top: 2px;
   }
 }

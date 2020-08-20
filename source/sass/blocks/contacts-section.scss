@@ -24,32 +24,9 @@
 }
 
 .contacts-section__contacts {
-  @media (min-width: $tablet-width) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: -23px;
-      right: 3px;
-
-      content: "";
-
-      width: 47px;
-      height: 81px;
-
-      background-image: url("../img/icon-flag.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     padding-top: 79px;
     padding-left: 175px;
-
-    &::before {
-      top: 64px;
-      left: 63px;
-    }
   }
 }
 

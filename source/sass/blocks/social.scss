@@ -32,24 +32,12 @@
 .social__link {
   display: inline-flex;
 
-  &--instagram {
-    width: 22px;
-    height: 21px;
-    background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $dark-mint-special;
   }
 
-  &--facebook {
-    width: 15px;
-    height: 28px;
-    background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--twitter {
-    width: 23px;
-    height: 20px;
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
+  &:active .social__icon {
+    opacity: 0.3;
   }
 }

@@ -34,26 +34,8 @@
   color: $white;
   text-decoration: none;
 
-  &::after {
-    position: absolute;
-
-    content: "";
-
-    background-repeat: no-repeat;
-    opacity: 0.5;
-  }
-
   &:focus {
     box-shadow: none;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 0.7;
-  }
-
-  &:active::after {
-    opacity: 0.3;
   }
 
   &--interior {
@@ -63,24 +45,6 @@
     &:focus {
       background-color: $mint-special;
     }
-
-    &::after {
-      top: 23px;
-      right: 36px;
-
-      width: 40px;
-      height: 62px;
-
-      background-image: url("../img/icon-interior.svg");
-    }
-
-    @media (min-width: $tablet-width) {
-      &::after {
-        top: 30px;
-
-        width: 41px;
-      }
-    }
   }
 
   &--toys {
@@ -89,26 +53,6 @@
     &:hover,
     &:focus {
       background-color: $dark-mint-special;
-    }
-
-    &::after {
-      top: 21px;
-      right: 27px;
-
-      width: 60px;
-      height: 60px;
-
-      background-image: url("../img/icon-toy.svg");
-    }
-
-    @media (min-width: $tablet-width) {
-      &::after {
-        top: 31px;
-        right: 33px;
-
-        width: 61px;
-        height: 61px;
-      }
     }
   }
 
@@ -120,10 +64,6 @@
 
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 350px;
 
     &:hover,
     &:focus {
@@ -131,6 +71,51 @@
       margin-top: -5px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 350px;
+  }
+}
+
+.categories__icon {
+  position: absolute;
+
+  opacity: 0.5;
+
+  &--interior {
+    top: 23px;
+    right: 36px;
+  }
+
+  &--toy {
+    top: 21px;
+    right: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--interior {
+      top: 30px;
+
+      width: 41px;
+    }
+
+    &--toy {
+      top: 31px;
+      right: 33px;
+
+      width: 61px;
+      height: 61px;
+    }
+  }
+}
+
+.categories__link:hover .categories__icon,
+.categories__link:focus .categories__icon {
+  opacity: 0.7;
+}
+
+.categories__link:active .categories__icon {
+  opacity: 0.3;
 }
 
 .categories__name {

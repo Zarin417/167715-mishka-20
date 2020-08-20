@@ -74,11 +74,6 @@
     color: rgba($black, 0.6);
   }
 
-  &:focus {
-    box-shadow: none;
-    outline: $mint solid 2px;
-  }
-
   &:active {
     color: rgba($black, 0.3);
   }
@@ -130,11 +125,25 @@
   padding: 0;
 
   border: none;
-
   background-color: transparent;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  opacity: 0.2;
 
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .product-card__to-basket-icon,
+  &:focus .product-card__to-basket-icon {
+    fill: $mint;
+    opacity: 1;
+  }
+
+  &:active .product-card__to-basket-icon {
+    opacity: 0.3;
+  }
+}
+
+.product-card__to-basket-icon {
+  opacity: 0.2;
 }

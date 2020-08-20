@@ -60,96 +60,33 @@
   font-weight: bold;
   line-height: 20px;
 
-  &::before {
-    position: absolute;
-    top: 0;
-
-    content: "";
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
   &--materials {
     padding-top: 55px;
     margin-bottom: 29px;
-
-    &::before {
-      left: 8px;
-
-      width: 32px;
-      height: 37px;
-
-      background-image: url("../img/icon-feature-flower.svg");
-    }
   }
 
   &--price {
     padding-top: 54px;
     margin-bottom: 35px;
-
-    &::before {
-      left: 0;
-      width: 47px;
-      height: 27px;
-
-      background-image: url("../img/icon-feature-money.svg");
-    }
   }
 
   &--likes {
     padding-top: 48px;
     margin-bottom: 32px;
-
-    &::before {
-      left: 7px;
-
-      width: 34px;
-      height: 27px;
-
-      background-image: url("../img/icon-feature-heart.svg");
-    }
   }
 
   &--with-love {
     padding-top: 51px;
     margin-bottom: 33px;
-
-    &::before {
-      left: 3px;
-
-      width: 35px;
-      height: 34px;
-
-      background-image: url("../img/icon-feature-ball.svg");
-    }
   }
 
   &--support {
     padding-top: 49px;
     margin-bottom: 32px;
-
-    &::before {
-      left: -6px;
-
-      width: 55px;
-      height: 23px;
-
-      background-image: url("../img/icon-feature-rocket.svg");
-    }
   }
 
   &--delivery {
     padding-top: 52px;
-
-    &::before {
-      left: 3px;
-
-      width: 33px;
-      height: 32px;
-
-      background-image: url("../img/icon-feature-gift.svg");
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -166,31 +103,64 @@
 
     &--likes {
       padding-top: 52px;
-
-      &::before {
-        top: 3px;
-        left: 8px;
-      }
     }
 
     &--with-love {
       padding-top: 57px;
-
-      &::before {
-        top: 4px;
-      }
     }
 
     &--support {
       padding-top: 55px;
-
-      &::before {
-        top: 3px;
-      }
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 350px;
+  }
+}
+
+.about-us__icon {
+  position: absolute;
+  top: 0;
+
+  fill: $mint;
+
+  &--flower {
+    left: 8px;
+  }
+
+  &--money {
+    left: 0;
+  }
+
+  &--heart {
+    left: 7px;
+  }
+
+  &--ball {
+    left: 3px;
+  }
+
+  &--rocket {
+    left: -6px;
+  }
+
+  &--gift {
+    left: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--heart {
+      top: 2px;
+      left: 8px;
+    }
+
+    &--ball {
+      top: 4px;
+    }
+
+    &--rocket {
+      top: 3px;
+    }
   }
 }
