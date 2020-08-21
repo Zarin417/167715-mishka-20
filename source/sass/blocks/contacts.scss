@@ -1,7 +1,11 @@
 .contacts {
+  position: relative;
+
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     margin-bottom: 47px;
   }
 
@@ -30,6 +34,23 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.contacts__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -24px;
+    right: 3px;
+
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 64px;
+    left: 63px;
   }
 }
 

@@ -35,20 +35,6 @@
 
   border: 1px solid $shadow;
 
-  &::before {
-    position: absolute;
-    top: 35px;
-    left: 34px;
-
-    content: "";
-    width: 32px;
-    height: 22px;
-
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
 
@@ -57,11 +43,6 @@
     padding-left: 107px;
 
     border-bottom: none;
-
-    &::before {
-      top: 39px;
-      left: 42px;
-    }
 
     & br {
       display: none;
@@ -78,14 +59,27 @@
     padding-bottom: 0;
     padding-left: 79px;
 
-    &::before {
-      top: 47px;
-      left: 79px;
-    }
-
     & br {
       display: block;
     }
+  }
+}
+
+.production__icon {
+  position: absolute;
+  top: 28px;
+  left: 33px;
+
+  fill: $mint;
+
+  @media (min-width: $tablet-width) {
+    top: 34px;
+    left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 78px;
   }
 }
 
@@ -117,33 +111,26 @@
 
 .production__video-btn {
   position: absolute;
-
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
-  width: 101px;
-  height: 77px;
   margin: auto;
   padding: 0;
 
   background-color: transparent;
-  background-image: url("../img/icon-play.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   border: none;
+  outline: none;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover .production__video-icon,
+  &:focus .production__video-icon {
     width: 121px;
     height: 92px;
-
-    outline: none;
   }
 
-  &:active {
+  &:active .production__video-icon {
     width: 81px;
     height: 62px;
     opacity: 0.3;
@@ -152,7 +139,7 @@
 
 .production__footer {
   margin-top: -7px;
-  padding-top: 35px;
+  padding-top: 39px;
   padding-right: 31px;
   padding-bottom: 33px;
   padding-left: 34px;

@@ -37,16 +37,6 @@
 
   word-wrap: break-word;
 
-  &::before {
-    position: absolute;
-    left: 30px;
-
-    content: "";
-
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
-
   @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-top: 33px;
@@ -56,49 +46,50 @@
 }
 
 .user-menu__item--search a {
-  &::before {
-    top: 32px;
-
-    width: 18px;
-    height: 18px;
-
-    background-image: url("../img/icon-search.svg");
-  }
-
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
+    padding-top: 57px;
     padding-left: 82px;
-
-    &::before {
-      top: 36px;
-      left: 35px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      left: 32px;
-    }
   }
 }
 
-.user-menu__item--basket a {
-  &::before {
+.user-menu__icon {
+  position: absolute;
+
+  opacity: 0.2;
+
+  &--search {
+    top: 32px;
+    left: 31px;
+  }
+
+  &--basket {
     top: 31px;
-
-    width: 21px;
-    height: 18px;
-
-    background-image: url("../img/icon-cart.svg");
+    left: 30px;
   }
 
   @media (min-width: $tablet-width) {
-    &::before {
+    &--search {
+      top: 36px;
+      left: 35px;
+    }
+
+    &--basket {
       top: 35px;
       left: 33px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--search {
+      left: 32px;
+    }
+
+    &--basket {
+      left: 31px;
+    }
+  }
 }
+
 
 .user-menu__item span {
   @media (min-width: $tablet-width) {
@@ -106,4 +97,14 @@
     z-index: -1;
     opacity: 0;
   }
+}
+
+.user-menu__item a:hover .user-menu__icon,
+.user-menu__item a:focus .user-menu__icon {
+  fill: $mint;
+  opacity: 1;
+}
+
+.user-menu__item a:active .user-menu__icon {
+  opacity: 0.3;
 }
