@@ -116,6 +116,8 @@
   bottom: 0;
   left: 0;
 
+  width: 101px;
+  height: 77px;
   margin: auto;
   padding: 0;
 
@@ -124,10 +126,21 @@
   outline: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    width: 121px;
+    height: 92px;
+  }
+
   &:hover .production__video-icon,
   &:focus .production__video-icon {
     width: 121px;
     height: 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
   }
 
   &:active .production__video-icon {
@@ -169,6 +182,7 @@
 
     &:hover {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.4s;
     }
 
     &:active {
