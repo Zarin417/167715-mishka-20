@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const minify = require("gulp-minify");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -31,6 +32,16 @@ const styles = () => {
 };
 
 exports.styles = styles;
+
+// MinifyHTML
+
+const minifyHtml = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+};
+
+exports.minifyHtml = minifyHtml;
 
 // Minify JS
 
@@ -85,7 +96,6 @@ exports.sprite = sprite;
 
 const copy = () => {
   return gulp.src([
-    "source/*.html",
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**"
   ], {
@@ -104,15 +114,6 @@ const clean = () => {
 
 exports.clean = clean;
 
-// Create production folder
-
-const build = gulp.series(
-    clean, copy, styles, minifyJs, sprite
-);
-
-exports.build = build;
-
-
 // Server
 
 const server = (done) => {
@@ -129,12 +130,20 @@ const server = (done) => {
 
 exports.server = server;
 
+// Create production folder
+
+const build = gulp.series(
+  clean, copy, styles,minifyHtml, minifyJs, sprite
+);
+
+exports.build = build;
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/*.js", gulp.series("minifyJs"));
-  gulp.watch("source/*.html", gulp.series("copy"));
+  gulp.watch("source/*.html", gulp.series("minifyHtml"));
   gulp.watch("build/*.html").on("change", sync.reload);
   gulp.watch("build/css/*.min.css").on("change", sync.reload);
   gulp.watch("build/js/*.min.js").on("change", sync.reload);
