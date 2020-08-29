@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 70px;
   }
 }
 
@@ -81,7 +81,7 @@
   @media (min-width: $desktop-width) {
     &:not(:last-child) {
       margin-right: 0;
-      margin-bottom: 33px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -104,6 +104,12 @@
     padding-bottom: 3px;
     border-bottom: 1px solid $mint;
   }
+
+  @media (min-width: $desktop-width) {
+    &--email a {
+      padding-bottom: 8px;
+    }
+  }
 }
 
 .contacts__email {
@@ -117,6 +123,7 @@
 
   &:active {
     color: $dark-mint-special;
+    border-bottom: 1px solid rgba($mint, 0.1);
   }
 }
 

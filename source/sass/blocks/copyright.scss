@@ -7,12 +7,13 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -9px;
     margin-left: auto;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -21,6 +22,10 @@
 
   font-size: 19px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+  }
 }
 
 .copyright__link {

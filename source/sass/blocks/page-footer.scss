@@ -25,6 +25,8 @@
 .page-footer__logo {
   display: none;
 
+  margin-right: auto;
+
   &--inner:hover,
   &--inner:focus {
     fill: $mint;

@@ -1,6 +1,6 @@
 .product-card__container {
   width: 260px;
-  margin-top: -7px;
+  margin-top: -6px;
   padding-top: 25px;
   padding-right: 27px;
   padding-left: 28px;
@@ -14,8 +14,8 @@
     width: 334px;
     margin-top: 0;
     padding-top: 27px;
-    padding-right: 33px;
-    padding-left: 34px;
+    padding-right: 31px;
+    padding-left: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,9 +34,16 @@
   }
 }
 
+.product-card__img-link {
+  display: inline-flex;
+}
+
 .product-card__img {
+  display: inline-flex;
+
   width: 260px;
   height: 195px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 334px;
@@ -55,7 +62,6 @@
 
   @media (min-width: $tablet-width) {
     max-width: 240px;
-    margin-bottom: 10px;
 
     font-size: 20px;
   }
@@ -108,6 +114,11 @@
   padding-bottom: 26px;
 
   border-top: 1px solid $shadow;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .product-card__price {
@@ -123,28 +134,23 @@
 .product-card__to-basket-btn {
   width: 20px;
   height: 19px;
-  padding: 0;
 
-  border: none;
-  background-color: transparent;
-
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover .product-card__to-basket-icon,
-  &:focus .product-card__to-basket-icon {
-    fill: $mint;
-    opacity: 1;
-  }
-
-  &:active .product-card__to-basket-icon {
-    opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 18px;
   }
 }
 
 .product-card__to-basket-icon {
   opacity: 0.2;
+}
+
+.product-card__to-basket-btn:hover .product-card__to-basket-icon,
+.product-card__to-basket-btn:focus .product-card__to-basket-icon {
+  fill: $mint;
+  opacity: 1;
+}
+
+.product-card__to-basket-btn:active .product-card__to-basket-icon {
+  opacity: 0.3;
 }

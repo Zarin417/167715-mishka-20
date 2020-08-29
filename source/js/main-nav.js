@@ -5,6 +5,7 @@ const mainMenu = document.querySelector(".main-nav__main-menu");
 const userMenu = document.querySelector(".main-nav__user-menu");
 
 menuButton.classList.remove("main-nav__menu-button--close");
+menuButton.classList.remove("main-nav__menu-button--no-js");
 mainMenu.classList.remove("main-nav__main-menu--no-js");
 userMenu.classList.remove("main-nav__user-menu--no-js");
 

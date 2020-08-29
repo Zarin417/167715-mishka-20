@@ -4,6 +4,11 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
+
+    max-width: 580px;
+    margin-right: auto;
+    padding-top: 20px;
   }
 }
 

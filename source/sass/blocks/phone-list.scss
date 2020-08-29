@@ -34,6 +34,7 @@
   padding-right: 35px;
   padding-bottom: 20px;
 
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   color: $graphite;
@@ -59,9 +60,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 11px;
     padding-right: 56px;
-    padding-bottom: 16px;
-    padding-left: 17px;
+    padding-bottom: 15px;
+    padding-left: 19px;
 
     font-size: 19px;
   }

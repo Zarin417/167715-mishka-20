@@ -18,9 +18,12 @@
   text-transform: uppercase;
   color: $mint;
 
-  &--type,
+  &--type {
+    margin-bottom: 31px;
+  }
+
   &--color {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   &--name {
@@ -120,6 +123,8 @@
 
   @media (min-width: $tablet-width) {
     width: 503px;
+
+    font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {

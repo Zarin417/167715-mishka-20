@@ -4,7 +4,7 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
 
     &--form {
       margin-bottom: 50px;
@@ -34,14 +34,18 @@
 
   &--form {
     background-color: $light-grey;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
+  }
+
+  &--catalog {
+    background-color: $light-grey;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
 
     &--catalog {
-      margin-bottom: 78px;
+      margin-bottom: 77px;
     }
 
     &--form {
@@ -58,7 +62,7 @@
       height: 24px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: contain;
+      background-size: 770px 24px;
       background-repeat: repeat-x;
     }
   }
@@ -69,6 +73,8 @@
     &::after {
       bottom: -17px;
       height: 34px;
+
+      background-size: 1150px 34px;
     }
 
     &--catalog {

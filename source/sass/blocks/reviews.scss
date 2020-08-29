@@ -230,6 +230,8 @@
 }
 
 .reviews__to-write {
+  height: 52px;
+
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 2/3;

@@ -5,11 +5,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
 .categories__item {
+  display: flex;
+
   @media (min-width: $tablet-width) {
     max-width: 334px;
   }
@@ -20,7 +21,7 @@
 }
 
 .categories__link {
-  display: block;
+  display: inline-flex;
   position: relative;
 
   padding-top: 25px;
@@ -67,13 +68,14 @@
 
     &:hover,
     &:focus {
-      height: 124px;
       margin-top: -5px;
+      padding-bottom: 39px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 350px;
+    padding-left: 37px;
   }
 }
 

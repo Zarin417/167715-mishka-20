@@ -1,4 +1,28 @@
 .page-header {
   width: 100%;
   border-bottom: 1px solid $shadow;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    background-image: linear-gradient(to bottom, $white 67%, $light-grey-index 33%);
+    border: none;
+
+    &::after {
+      position: absolute;
+      top: 67%;
+      left: 0;
+
+      content: "";
+
+      width: 100%;
+      height: 1px;
+
+      background-color: rgba($black, 0.1);
+    }
+
+    &--inner {
+      background-image: linear-gradient(to bottom, $white 67%, $light-grey 33%);
+    }
+  }
 }
